@@ -1,0 +1,60 @@
+body{
+    margin: 0%;
+    background-color: rgb(39, 38, 38);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: azure;
+}
+.calculadora{
+    background-color: rgb(255, 85, 12);
+    display: grid;
+    grid-template-columns: repeat(5, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: -15px 10px 10px 5px rgb(83, 83, 83);
+    
+}
+button{
+    
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 20px;
+    font-size: 1.5em;
+    border: none;
+    box-shadow: 5px 0px 6px -3px rgb(83, 83, 83), -5p -5px 15px 3px black;
+}
+button:active{
+   background-color: rgb(192, 64, 0); 
+}
+button:focus{
+outline: none;
+}
+.display{
+    display: flex;
+    grid-column: 1/-1; /* Se le da el ancho total al dispaly */
+    background-color: white;
+    border-radius: 20px; /* Borde del div*/
+    padding: 20px;
+    margin: 20px 15px; /*margen arriva/abajo---derecha izquierda*/
+    flex-direction: column; /*Se colocan los elemenoa en columnas*/
+    align-items: flex-end; /*se coloca a la derecha los elementos*/
+    text-align: initial;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 5px rgb(99, 27, 0);
+}
+.col-2{
+    grid-column: span 3; /*Se le pide a la clase que se expanda 3 columnas*/
+}
+.actual{
+    font-size: 1.6em;
+}
+.anterior{
+    font-size: 1.8em;
+}
